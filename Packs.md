@@ -1,58 +1,58 @@
-# Packs por Dominio (Educativos)
+# Domain Packs (Educational)
 
-Este SDK incluye 4 packs verticales:
+This SDK includes 4 vertical packs:
 
 - `RelationshipPack`
 - `QuestPack`
 - `BuffPack`
 - `InventoryPack`
 
-Cada pack contiene:
+Each pack contains:
 
-- Conditions de dominio (predicados puros).
-- Actions de dominio (mutaciones controladas).
-- Script orquestador de ejemplo.
+- Domain conditions (pure predicates).
+- Domain actions (controlled state mutations).
+- An example orchestration script.
 
-Objetivo: ensenar composicion por bounded context con UnLua.
+Objective: teach bounded-context composition with UnLua.
 
-## Ejecutar demo de packs
+## Run Pack Demo
 
 ```powershell
 $env:LUA_PATH='inzoi_educational_sdk\lua\?.lua;inzoi_educational_sdk\lua\?\init.lua;inzoi_educational_sdk\lua\?\?.lua;inzoi_educational_sdk\lua\?\?\?.lua;;'
 lua -e "require('Examples.RunAllPacks').Run()"
 ```
 
-## Ejecutar tests
+## Run Tests
 
 ```powershell
 $env:LUA_PATH='inzoi_educational_sdk\lua\?.lua;inzoi_educational_sdk\lua\?\init.lua;inzoi_educational_sdk\lua\?\?.lua;inzoi_educational_sdk\lua\?\?\?.lua;;'
 lua inzoi_educational_sdk\lua\Tests\RunAllSpecs.lua
 ```
 
-## Exportar reporte JSON (CI)
+## Export JSON Report (CI)
 
 ```powershell
 $env:LUA_PATH='inzoi_educational_sdk\lua\?.lua;inzoi_educational_sdk\lua\?\init.lua;inzoi_educational_sdk\lua\?\?.lua;inzoi_educational_sdk\lua\?\?\?.lua;;'
 lua inzoi_educational_sdk\lua\Tests\RunAllSpecs.lua inzoi_educational_sdk\artifacts\test_report.json
 ```
 
-## Generar nuevo dominio desde template
+## Generate a New Domain from Template
 
 ```powershell
 python inzoi_educational_sdk\tools\generate_domain_pack.py --name Economy --with-test
 ```
 
-Despues de generar un test nuevo, agregalo a `lua/Tests/RunAllSpecs.lua`.
+After generating a new test, add it to `lua/Tests/RunAllSpecs.lua`.
 
-## I18n para curso multilenguaje
+## i18n for Multi-Language Courses
 
-Puedes cambiar el idioma activo en runtime usando `EduAPI.NewRuntime({ locale = "de" })`.
+You can change the active language at runtime using `EduAPI.NewRuntime({ locale = "de" })`.
 
-Traducciones por clave:
+Key-based translations:
 - `api.I18n:T("course.title")`
 - `api.I18n:T("course.module.struct")`
 
-Locales por defecto:
+Default locales:
 - `lua/i18n/locales/en.lua`
 - `lua/i18n/locales/es.lua`
 - `lua/i18n/locales/de.lua`
@@ -63,7 +63,7 @@ Locales por defecto:
 - `lua/i18n/locales/zh_cn.lua`
 - `lua/i18n/locales/index.lua`
 
-Escalado recomendado:
-1. `tools/add_locale.py` para crear nuevo idioma base.
-2. Registrar idioma en `locales/index.lua`.
-3. `tools/check_locales.py` para validar cobertura en CI.
+Recommended scale path:
+1. Use `tools/add_locale.py` to create a new base locale.
+2. Register the locale in `locales/index.lua`.
+3. Use `tools/check_locales.py` to validate key coverage in CI.

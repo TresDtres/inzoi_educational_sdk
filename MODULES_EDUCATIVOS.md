@@ -1,31 +1,31 @@
-# Modulos Educativos (modelo simulado)
+# Educational Modules (Simulated Model)
 
-## Modulo: StructGuide Data
+## Module: StructGuide Data
 
-- Concepto original de la wiki: `StructGuide` describe entidades y campos.
-- Interpretacion tecnica: contrato de datos para sistemas de juego.
-- API educativa simulada: `Core/Registry.lua`.
-- Ejemplo practico: `Registry:ValidatePayload("Trait", payload)`.
-- Flujo interno: UE data -> Registry -> script Lua.
-- Buenas practicas: validar payload antes de ejecutar actions.
-- Errores frecuentes: campos faltantes o tipos incorrectos.
+- Original wiki concept: `StructGuide` defines entities and fields.
+- Technical interpretation: data contract for gameplay systems.
+- Simulated educational API: `Core/Registry.lua`.
+- Practical example: `Registry:ValidatePayload("Trait", payload)`.
+- Internal flow: UE data -> Registry -> Lua script.
+- Best practice: validate payloads before executing actions.
+- Common failure mode: missing fields or invalid types.
 
-## Modulo: Script Condition
+## Module: Script Condition
 
-- Concepto original de la wiki: condiciones `[Cond]_...`.
-- Interpretacion tecnica: predicados de autorizacion.
-- API educativa simulada: `Conditions/Condition.lua`.
-- Ejemplo practico: `Condition.All(...)`.
-- Flujo interno: trigger -> check -> continue/cancel.
-- Buenas practicas: condiciones puras sin side effects.
-- Errores frecuentes: mutar estado durante una condicion.
+- Original wiki concept: `[Cond]_...` conditions.
+- Technical interpretation: authorization predicates.
+- Simulated educational API: `Conditions/Condition.lua`.
+- Practical example: `Condition.All(...)`.
+- Internal flow: trigger -> check -> continue/cancel.
+- Best practice: keep conditions pure and side-effect free.
+- Common failure mode: mutating state during condition evaluation.
 
-## Modulo: Script Execution
+## Module: Script Execution
 
-- Concepto original de la wiki: acciones `[Exec]_...`.
-- Interpretacion tecnica: comandos de mutacion y presentacion.
-- API educativa simulada: `Actions/Action.lua`.
-- Ejemplo practico: `Action.Sequence(...)`.
-- Flujo interno: condition success -> execute actions -> emit events.
-- Buenas practicas: control de fallo parcial por accion.
-- Errores frecuentes: no validar target o parametros.
+- Original wiki concept: `[Exec]_...` actions.
+- Technical interpretation: mutation and presentation commands.
+- Simulated educational API: `Actions/Action.lua`.
+- Practical example: `Action.Sequence(...)`.
+- Internal flow: condition success -> execute actions -> emit events.
+- Best practice: enforce per-action partial-failure handling.
+- Common failure mode: skipping target/parameter validation.
