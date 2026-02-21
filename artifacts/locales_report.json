@@ -1,0 +1,86 @@
+{
+  "ok": true,
+  "base_locale": "en",
+  "checks": [
+    {
+      "code": "en",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\en.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "es",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\es.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "de",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\de.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "fr",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\fr.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "pt-BR",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\pt_br.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "kor",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\kor.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "ko",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\kor.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "ja",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\ja.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "zh-CN",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\zh_cn.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    },
+    {
+      "code": "zh",
+      "file": "C:\\Users\\Admin\\Documents\\codex\\inzoi_educational_sdk\\lua\\i18n\\locales\\zh_cn.lua",
+      "missing": [],
+      "extra": [],
+      "todo_keys": [],
+      "ok": true
+    }
+  ]
+}
