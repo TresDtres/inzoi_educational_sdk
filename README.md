@@ -6,6 +6,11 @@ Important:
 - This is not the official game API.
 - This repository is a simulation built from observed documentation patterns.
 - The goal is to teach robust technical design with UnLua.
+- NOT affiliated with KRAFTON
+- NOT redistributing proprietary assets
+- NOT reverse-engineering any internal system
+
+It is an educational reference architecture.
 
 ## Architecture Layout
 
